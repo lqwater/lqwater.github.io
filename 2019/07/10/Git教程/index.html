@@ -16,7 +16,7 @@
 <meta property="og:description" content="git教程git是什么？ 1 这是百度给出的定义。git">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/01/QQ图片20190705183743.jpg">
-<meta property="og:updated_time" content="2019-07-10T10:49:22.939Z">
+<meta property="og:updated_time" content="2019-07-10T10:50:57.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git教程">
 <meta name="twitter:description" content="git教程git是什么？ 1 这是百度给出的定义。git">
@@ -190,108 +190,38 @@
         <div class="content">
             <h1 id="git教程"><a href="#git教程" class="headerlink" title="git教程"></a>git教程</h1><h2 id="git是什么？"><a href="#git是什么？" class="headerlink" title="git是什么？"></a>git是什么？</h2><ul>
 <li>1 这是百度给出的定义。<a href="https://baike.baidu.com/item/GIT/12647237?fr=aladdin" target="_blank" rel="noopener">git</a><a id="more"></a></li>
-<li>2 就我自己的理解来看，git和GitHub结合起来后（国内可以是码云），它不仅仅是一个工作的命令系统（多人结合的系统），它也是一个学习的平台。在上面你可以学习到许多的新的知识，对你想要了解到的。<h2 id="git的命令"><a href="#git的命令" class="headerlink" title="git的命令"></a>git的命令</h2><blockquote>
+<li>2 就我自己的理解来看，git和GitHub结合起来后（国内可以是码云），它不仅仅是一个工作的命令系统（多人结合的系统），它也是一个学习的平台。在上面你可以学习到许多的新的知识，对你想要了解到的。</li>
+</ul>
+<h2 id="git的命令"><a href="#git的命令" class="headerlink" title="git的命令"></a>git的命令</h2><blockquote>
 <p>Git Bash Here</p>
-</blockquote>
-</li>
-<li>1 如果你要使用git命令，你应该在你本地端，即你的文件夹内运行<strong>Git Bash Here</strong>命令。这个时候会运行一个命令框，是命令行的命令框。你可以对这个目录下的文件进行修改，或者对Github上面的版本库进行操作。<blockquote>
-<p>git diff</p>
-</blockquote>
-</li>
-<li>2 运行这个命令后，本地端的文件是没有提交到版本库的。这个命令可以显示<strong>运行前后</strong>两次不同的内容<blockquote>
-<p>git add “文件名”</p>
-</blockquote>
-</li>
-<li>3 提交一个文件到<strong>本地</strong>版本库<blockquote>
-<p>Git status</p>
-</blockquote>
-</li>
-<li>4 查看当前版本库的状态，或者是当前分支的状态。有主分支和不是主分支的区别。<blockquote>
-<p>git commit -m “文件名称或者称呼”</p>
-</blockquote>
-</li>
-<li>5 把一个文件从本地的版本库提交到云端的版本库<blockquote>
-<p>git log</p>
-</blockquote>
-</li>
-<li>6 查看历史的状态。可以查看全部的状态，也可以以图表的形式显示出来，更加的直观<blockquote>
-<p>git reset HEAD ___</p>
-</blockquote>
-</li>
-<li>7 回退版本库 ___ 里面是你的版本号。<blockquote>
-<p>git rm</p>
-</blockquote>
-</li>
-<li>8 删除一个文本，删除操作<blockquote>
-<p>git remote  git remote -v</p>
-</blockquote>
-</li>
-<li>9 查看远端库的信息<blockquote>
-<p>master(主分支)   dev(开发分支)</p>
-</blockquote>
-</li>
-<li>10 dev(开发分支)要时刻于远端库保持同步，调试的bug分支不需要时刻保持同步<blockquote>
-<p>git reflog</p>
-</blockquote>
-</li>
-<li>11 查看命令历史，可以看到版本号，确定准确的回到那个版本库<blockquote>
-<p>git reset -hard ___</p>
-</blockquote>
-</li>
-<li>12 版本回退 <blockquote>
-<p>cat</p>
-</blockquote>
-</li>
-<li>13 查看文本的内容<blockquote>
-<p>git diff HEAD – “文件名”</p>
-</blockquote>
-</li>
-<li>14 查看工作区与版本库，要仔细的区分<blockquote>
-<p>git checkout – 文件名</p>
-</blockquote>
-</li>
-<li>15 撤销修改，回到上一次的状态<blockquote>
-<p>git rm __后gitcommit -m “remove ***.txt”</p>
-</blockquote>
-</li>
-<li>16 从版本库里面删除<blockquote>
-<p>git checkout -b dev</p>
-</blockquote>
-</li>
-<li>17 创建一个分支，并且切换到这个分支上<blockquote>
-<p>git branch</p>
-</blockquote>
-</li>
-<li>18 查看当前的分支<blockquote>
-<p>git merge dev</p>
-</blockquote>
-</li>
-<li>19 合并指定的分支<blockquote>
-<p>git fast -forward</p>
-</blockquote>
-</li>
-<li>20 快进模式，就是master分支指向dev，速度很快<blockquote>
-<p>git branch -d dev</p>
-</blockquote>
-</li>
-<li>21 删除指定的分支<blockquote>
-<p>git log –graph</p>
-</blockquote>
-</li>
-<li>22 可以查看分支的合并图<blockquote>
-<p>git stash</p>
-</blockquote>
-</li>
-<li>23 把当前的工作储存起来，以后可以恢复，可以通过新的分支来解决bug。可以继续多次的git stash<blockquote>
-<p>git stash pop</p>
-</blockquote>
-</li>
-<li>24 回到工作的现场<blockquote>
-<p>git rebase</p>
-</blockquote>
-</li>
+<ul>
+<li>1 如果你要使用git命令，你应该在你本地端，即你的文件夹内运行<strong>Git Bash Here</strong>命令。这个时候会运行一个命令框，是命令行的命令框。你可以对这个目录下的文件进行修改，或者对Github上面的版本库进行操作。<br>git diff</li>
+<li>2 运行这个命令后，本地端的文件是没有提交到版本库的。这个命令可以显示<strong>运行前后</strong>两次不同的内容<br>git add “文件名”</li>
+<li>3 提交一个文件到<strong>本地</strong>版本库<br>Git status</li>
+<li>4 查看当前版本库的状态，或者是当前分支的状态。有主分支和不是主分支的区别。<br>git commit -m “文件名称或者称呼”</li>
+<li>5 把一个文件从本地的版本库提交到云端的版本库<br>git log</li>
+<li>6 查看历史的状态。可以查看全部的状态，也可以以图表的形式显示出来，更加的直观<br>git reset HEAD ___</li>
+<li>7 回退版本库 ___ 里面是你的版本号。<br>git rm</li>
+<li>8 删除一个文本，删除操作<br>git remote  git remote -v</li>
+<li>9 查看远端库的信息<br>master(主分支)   dev(开发分支)</li>
+<li>10 dev(开发分支)要时刻于远端库保持同步，调试的bug分支不需要时刻保持同步<br>git reflog</li>
+<li>11 查看命令历史，可以看到版本号，确定准确的回到那个版本库<br>git reset -hard ___</li>
+<li>12 版本回退<br>cat</li>
+<li>13 查看文本的内容<br>git diff HEAD – “文件名”</li>
+<li>14 查看工作区与版本库，要仔细的区分<br>git checkout – 文件名</li>
+<li>15 撤销修改，回到上一次的状态<br>git rm __后gitcommit -m “remove ***.txt”</li>
+<li>16 从版本库里面删除<br>git checkout -b dev</li>
+<li>17 创建一个分支，并且切换到这个分支上<br>git branch</li>
+<li>18 查看当前的分支<br>git merge dev</li>
+<li>19 合并指定的分支<br>git fast -forward</li>
+<li>20 快进模式，就是master分支指向dev，速度很快<br>git branch -d dev</li>
+<li>21 删除指定的分支<br>git log –graph</li>
+<li>22 可以查看分支的合并图<br>git stash</li>
+<li>23 把当前的工作储存起来，以后可以恢复，可以通过新的分支来解决bug。可以继续多次的git stash<br>git stash pop</li>
+<li>24 回到工作的现场<br>git rebase</li>
 <li>25 把本地未push的分叉提交历史，整理成为直线。方便观看 </li>
 </ul>
+</blockquote>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>上面只是一些比较简单的git的命令，推荐去下面的地址学习。如果你想要更加深入了解这个方面的知识的话。</p>
 <blockquote>
 <p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰大神的git命令教程</a></p>
